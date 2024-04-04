@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Ordering System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3e8e8; /* Soft pink background */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f3e8e8; /* Soft pink background */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff6b6b; /* Soft pink text color */
+      margin: 0;
+    }
+
+    .menu {
+      display: inline-block;
+      margin-right: 50px;
+      vertical-align: top;
+    }
+
+    .menu h2 {
+      color: #ff6b6b; /* Soft pink text color */
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu ul li {
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .order {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .order h2 {
+      color: #ff6b6b; /* Soft pink text color */
+    }
+
+    .order form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .order input[type="text"],
+    .order input[type="number"] {
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .order button {
+      padding: 8px 20px;
+      background-color: #ff6b6b; /* Soft pink background */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order button:hover {
+      background-color: #e74c3c; /* Darker pink background on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bakery Ordering System</h1>
+  </header>
+  <div class="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li>Baguette</li>
+      <li>Croissant</li>
+      <li>Sourdough</li>
+      <li>Ciabatta</li>
+    </ul>
+    <div>
+      <h3>Select Type:</h3>
+      <select>
+        <option value="">Select Type</option>
+        <option value="Plain">Plain</option>
+        <option value="Whole Wheat">Whole Wheat</option>
+        <option value="Multigrain">Multigrain</option>
+      </select>
+    </div>
+  </div>
+  <div class="order">
+    <h2>Order</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="number" placeholder="Quantity">
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>
